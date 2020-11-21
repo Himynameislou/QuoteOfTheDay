@@ -17,5 +17,4 @@ test:
 production:
   <<: *default
   database: QOTD_production
-  # username: QOTD
-  # password: <%= ENV['QOTD_DATABASE_PASSWORD'] %>
+  
