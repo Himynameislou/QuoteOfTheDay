@@ -1,8 +1,12 @@
 @import "bootstrap";
 @import "font-awesome";
 
+body {
+  background: #C7E3FF;
+}
+
 header {
-  border-top: 6px solid lightcoral;
+  border-top: 8px solid #FF61E5;
 }
 
 hr {
@@ -27,7 +31,7 @@ h1 {
 
 #commenticon {
   font-size: 2em;
-  color: aqua;
+  color: #FF2D55;
   font-weight: bold;
   padding-top: 7px;
 }
@@ -36,7 +40,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   padding-top: 15px;
-  color: aquamarine;
+  color: grey;
 
 }
 
@@ -47,7 +51,7 @@ h1 {
 }
 
 .links a {
-  color: aquamarine;
+  color: grey;
   font-weight: bold;
   font-size: 22px;
 
