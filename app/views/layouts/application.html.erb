@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ditto</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>ditto</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <body>
-    <header class="row">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <header class="row">
     <div class="col-3">
       &nbsp;
       &nbsp;
       <i class="fa fa-comment-o" aria-hidden="true" id="commenticon"></i>
     </div>
     <div class="col-4 slogan">
-      Giving your ego a place to shine since 2020 
+      Giving your ego a place to shine since 2020
     </div>
     <div class="col-5 links">
       <%= link_to 'Quote Yourself', '#' %>
       <%= link_to 'About', '#' %>
     </div>
-    </header>
+  </header>
 
-    <hr />
-    
-    <br class="clear">
-    <div class="container">
+  <hr />
+
+  <br class="clear">
+  <div class="container">
     <%= yield %>
-    </div>
+  </div>
 
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <p class="text-muted">Place sticky footer content here </p>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <%= link_to "This isnt enough, I need more", "#", class: "next-quote" %>
+        </div>
+        <div class="col-6 footer-blurb">
+          Proudly hacked by <a class="blurblink" href="[PORT_URL]">[Lou]</a><br />
         </div>
       </div>
     </div>
+  </div>
 
-  </body>
+</body>
+
 </html>
