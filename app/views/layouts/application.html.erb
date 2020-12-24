@@ -13,7 +13,7 @@
 <body>
   <header class="row">
     <div class="col-3">
-    <%= link_to root_path do %>
+    <%= link_to root_path, class: 'logo' do %>
       <i class="fa fa-comment-o" aria-hidden="true" id="commenticon"></i>
     <% end %>
     </div>
@@ -37,7 +37,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <%= link_to "This isnt enough, I need more", "#", class: "next-quote" %>
+          <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
         </div>
         <div class="col-6 footer-blurb">
           Proudly hacked by <a class="blurblink" href="[PORT_URL]">[Lou]</a><br />
