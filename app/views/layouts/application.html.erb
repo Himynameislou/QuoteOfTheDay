@@ -13,15 +13,15 @@
 <body>
   <header class="row">
     <div class="col-3">
-      &nbsp;
-      &nbsp;
+    <%= link_to root_path do %>
       <i class="fa fa-comment-o" aria-hidden="true" id="commenticon"></i>
+    <% end %>
     </div>
     <div class="col-4 slogan">
       Giving your ego a place to shine since 2020
     </div>
     <div class="col-5 links">
-      <%= link_to 'Quote Yourself', '#' %>
+      <%= link_to 'Quote Yourself', new_quote_path %>
       <%= link_to 'About', '#' %>
     </div>
   </header>
