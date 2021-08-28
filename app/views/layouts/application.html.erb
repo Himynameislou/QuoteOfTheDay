@@ -11,24 +11,27 @@
 </head>
 
 <body>
+
   <header class="row">
     <div class="col-3">
-    <%= link_to root_path, class: 'logo' do %>
-      <i class="fa fa-comment-o" aria-hidden="true" id="commenticon"></i>
-    <% end %>
+      <%= link_to root_path, class: 'logo' do %>
+        <i class="fa fa-comment-o" aria-hidden="true" id="commenticon"></i>
+      <% end %>
     </div>
     <div class="col-4 slogan">
-      Giving your ego a place to shine since 2020
+      Giving your ego a place to shine since 2021
     </div>
     <div class="col-5 links">
       <%= link_to 'Quote Yourself', new_quote_path %>
       <%= link_to 'About', '#' %>
     </div>
   </header>
+  
 
   <hr />
 
-  <br class="clear">
+  <br class="clear"/>
+  
   <div class="container">
     <%= yield %>
   </div>
