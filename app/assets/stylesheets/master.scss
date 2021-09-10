@@ -2,11 +2,15 @@
 @import "font-awesome";
 
 body {
-  background: #C7E3FF;
+  background: rgb(94,48,78);
+  background: linear-gradient(180deg, rgba(94,48,78,1) 0%, rgba(179,79,92,1) 35%, rgba(253,127,92,1) 100%);
 }
 
 header {
-  border-top: 8px solid #FF61E5;
+  border-top: 15px solid #FF61E5;
+  background-color: #FCF9A3;
+  
+  padding-bottom: 10px;
 }
 
 hr {
@@ -34,6 +38,7 @@ h1 {
   color: #FF2D55;
   font-weight: bold;
   padding-top: 7px;
+  padding-left: 20px;
 }
 
 .slogan {
